@@ -50,6 +50,7 @@ search(Word,[{X,_Numbers}|WordList])->
 show_stats(List) ->
   [io:format("~ts: ~p~n",[Word,Numbers])||{Word,Numbers}<-List].
 
+% tests are tested with modified testing text.
 test()->
   Wl=[{"Видал",[1]},{"and",[3,5,8,12,17,29]}],
   {"Word",[{1,5},{10},{12,13},{22}]}=gnaw({"Word",[1,2,3,4,5,5,5,5,10,10,12,13,22]}),
